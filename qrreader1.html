@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr code reader</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="box">
+        <form action="#">
+            <input type="file" hidden>
+            <img src="#" alt="qr code" height="225px" width="225px">
+            <div class="content">
+                <i class="fas fa-cloud-upload"></i>
+                    <p>Upload QR COde</p>
+                    <button type="button" class="camera-btn">
+                <i class="fas fa-camera"></i>
+                Scan with Camera
+            </button>
+            </div> 
+        </form>
+    <div class="camera-container">
+        <div id="reader"></div>
+
+        <button type="button" class="stop-camera">
+            Stop Camera
+        </button>
+    </div>
+        <div class="details">
+            <textarea spellcheck="false" disabled></textarea>
+            <div class="buttons">
+                <button class="close">close</button>
+                <button class="copy">copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script src="script1.js"></script>
+   
+</body>
+</html>
