@@ -22,11 +22,19 @@
             </div> 
         </form>
     <div class="camera-container">
-        <div id="reader"></div>
+       <label for="camera-select">
+        Select Camera
+    </label>
 
-        <button type="button" class="stop-camera">
-            Stop Camera
-        </button>
+    <select id="camera-select">
+        <option value="">Select a camera</option>
+    </select>
+
+    <div id="reader"></div>
+
+    <button type="button" class="stop-camera">
+        Stop Camera
+    </button>
     </div>
         <div class="details">
             <textarea spellcheck="false" disabled></textarea>
